@@ -7,7 +7,7 @@ import java.sql.Connection;
 
 public class DataAccessObject {
 	
-	public static boolean create(DataTransferObject dto) throws Exception {
+	public static boolean create(DataTransferObject dto) throws Exception { // account create
 		
 		Connection con = null;
 		Statement st = null;
@@ -53,5 +53,41 @@ public class DataAccessObject {
 		}
 		
 		return createFlag;
+	}
+	
+	public static int loginCheck(DataTransferObject dto) throws Exception { // check login
+		
+		Connection con = null;
+		Statement st = null;
+		ResultSet rs = null;
+		
+		String name = dto.getName();
+		String password = dto.getPassword();
+		String sql = "SELECT * FROM member WHERE name = '" + name + "'";
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/account?serverTimezone=Asia/Seoul",
+					"root", "wnsgh1524");
+			
+			st = (Statement)con.createStatement();
+			rs = st.executeQuery(sql);
+			
+			if (rs.next()) {
+				if (rs.getString(2).equals(password)) { // column
+					return 1; // login success
+				} else {
+					// System.out.println(password + ", " + rs.getString(2));
+					return 0; // password error
+				}
+			}
+			
+			return -1; // none ID
+		} catch(Exception e) {
+			System.out.println("Login check error... " + e.getMessage());
+			e.printStackTrace();
+		}
+		
+		return -2; // DB error
 	}
 }
