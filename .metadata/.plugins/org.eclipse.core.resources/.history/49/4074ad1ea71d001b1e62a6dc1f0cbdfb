@@ -1,0 +1,27 @@
+package sign;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class SignUpForm extends JFrame {
+	
+	DataTransferObject dto = new DataTransferObject(); // object dto
+	
+	private TextField name; // name
+	private TextField address; // address
+	private JPasswordField password; // password
+	
+	public SignUpForm() {
+		
+		Panel p = new Panel();
+		
+		setLayout(new BorderLayout());
+		
+		Label name = new Label("name");
+		
+		setSize(300, 300);
+		setResizable(false);
+		setVisible(true);
+	}
+}

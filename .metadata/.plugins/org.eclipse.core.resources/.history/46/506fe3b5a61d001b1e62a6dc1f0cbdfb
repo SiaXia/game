@@ -1,0 +1,14 @@
+package sign;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class SignUpForm extends JFrame {
+	
+	DataTransferObject dto = new DataTransferObject();
+	
+	public SignUpForm() {
+		
+	}
+}

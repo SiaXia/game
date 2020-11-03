@@ -1,0 +1,13 @@
+package sign;
+
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.sql.ResultSet;
+
+public class DataAccessObject {
+	
+	public static boolean create(DataTransferObject dto) throws Exception {
+		
+		boolean createFlag = false;
+	}
+}
