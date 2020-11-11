@@ -73,9 +73,4 @@ public class SignInForm extends JFrame {
 		setResizable(false);
 		setVisible(true);
 	}
-	
-	public static void main(String[] args) {
-		
-		new SignInForm();
-	}
 }
