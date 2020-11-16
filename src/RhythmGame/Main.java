@@ -1,8 +1,12 @@
 package RhythmGame;
 
+<<<<<<< HEAD
 import javax.swing.JFrame;
 
 public class Main{
+=======
+public class Main {
+>>>>>>> cc365dd5456acc71f2e0d8275201542a90f80ae6
 	public static final int SCREEN_WIDTH = 1280;
 	public static final int SCREEN_HEIGHT = 720;
 	public static final int NOTE_SPEED = 2;
@@ -14,7 +18,15 @@ public class Main{
 	public static String printCombo="Combo: "+combo; // "combo= x"를 저장하는 변수ㄴ
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		new DynamicBeat();
 		new chat.Server();
 	}
+=======
+
+		new DynamicBeat();
+
+	}
+
+>>>>>>> cc365dd5456acc71f2e0d8275201542a90f80ae6
 }

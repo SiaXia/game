@@ -6,7 +6,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/nyamn/OneDrive/바탕 화면/game-Chanbin (2)/JLayer1.0.1/jl1.0.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/nyamn/OneDrive/바탕 화면/game-Chanbin (2)/mysql-connector-java-8.0.22/mysql-connector-java-8.0.22.jar"/>
+=======
+	<classpathentry kind="lib" path="C:/Users/nyamn/Desktop/game-Chanbin/game-Chanbin/JLayer1.0.1/jl1.0.1.jar"/>
+>>>>>>> cc365dd5456acc71f2e0d8275201542a90f80ae6
 	<classpathentry kind="output" path="bin"/>
 </classpath>
